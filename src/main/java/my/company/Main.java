@@ -24,9 +24,8 @@ public class Main {
             max = c;
         }
         System.out.print("Наибольшее число- " + max);
+
     }
-
-
 
     public class Three {
         public static void main(String[] args) {
