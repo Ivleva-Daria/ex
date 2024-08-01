@@ -45,6 +45,9 @@ public class Main {
             case 12: Twelve twelve = new Twelve();
             twelve.methodTwelve();
             break;
+            case 13: Thirteen thirteen = new Thirteen();
+            thirteen.methodthirteen();
+            break;
         }
     }
 
