@@ -51,6 +51,9 @@ public class Main {
             case 14: Fourteen fourteen = new Fourteen();
             fourteen.methodfourteen();
             break;
+            case 15: Fifteen fifteen = new Fifteen();
+            fifteen.methodfifteen();
+            break;
         }
     }
 
