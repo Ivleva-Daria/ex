@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Thirteen {
     void methodthirteen() {
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         System.out.print("Укажите, длину какой сторны Вы ищете (1_катет, 2_катет или гипотенузу): ");
         String s = sc.next();
         switch (s) {
@@ -40,6 +40,37 @@ public class Thirteen {
                     }
                 }
             }
+        }*/
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Укажите, длину какой сторны Вы ищете (1_катет, 2_катет или гипотенузу):");
+        String a = sc.next();
+        double[] m = new double[3];
+        if(a.equals("1_катет")){
+            System.out.print("Укажите длину 2 катета: ");
+             m[1] = sc.nextDouble();
+            System.out.print("Укажите длину гипотенузы: ");
+             m[2] = sc.nextDouble();
+             m[0]  = (m[2] * m[2]) - (m[1] * m[1]);
+             int x = (int) Math.pow(m[0],0.5);
+            System.out.print("Длина катета 1: " + x );
+        }else if(a.equals("2_катет")){
+            System.out.print("Укажите длину 1 катета: ");
+            m[0] = sc.nextDouble();
+            System.out.print("Укажите длину гипотенузы: ");
+            m[2] = sc.nextDouble();
+            m[1]  = (m[2] * m[2]) - (m[0] * m[0]);
+            int x = (int) Math.pow(m[1],0.5);
+            System.out.print("Длина катета 2: " + x );
+        }else if(a.equals("гипотенуза")){
+            System.out.print("Укажите длину 1 катета: ");
+            m[0] = sc.nextDouble();
+            System.out.print("Укажите длину 2 катета: ");
+            m[1] = sc.nextDouble();
+            m[2]  = (m[0] * m[0]) + (m[1] * m[1]);
+            int x = (int) Math.pow(m[2],0.5);
+            System.out.print("Длина гипотенузы: " + x );
         }
     }
+
+
 }
