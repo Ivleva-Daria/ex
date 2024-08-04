@@ -69,6 +69,12 @@ public class Main {
             int d = scanner.nextInt();
             dayOfTheWeek.dayOfTheWeek(d);
             break;
+            case 19: Nineteen numberWord = new Nineteen();
+            Scanner scanner1 = new Scanner(System.in);
+            System.out.print("Введите число: ");
+            int num = scanner1.nextInt();
+            numberWord.numberWord(num);
+            break;
         }
 
     }
