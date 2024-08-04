@@ -57,8 +57,14 @@ public class Main {
             case 16: Sixteen sixteen = new Sixteen();
             sixteen.methodsixteen();
             break;
+            case 17: Seventeen factorial = new Seventeen();
+            Scanner sc = new Scanner(System.in);
+            System.out.print("Введите число n: ");
+            int n = sc.nextInt();
+            factorial.factorial(n);
+            break;
         }
-    }
 
+    }
 }
 
