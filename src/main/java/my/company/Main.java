@@ -63,6 +63,12 @@ public class Main {
             int n = sc.nextInt();
             factorial.factorial(n);
             break;
+            case 18: Eighteen dayOfTheWeek = new Eighteen();
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Введите номер дня недели: ");
+            int d = scanner.nextInt();
+            dayOfTheWeek.dayOfTheWeek(d);
+            break;
         }
 
     }
