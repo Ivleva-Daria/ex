@@ -1,5 +1,8 @@
 package my.company;
 import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
 public class Tasks {
     void methodTask(int chNew) {
@@ -89,7 +92,22 @@ public class Tasks {
                 int num = scanner1.nextInt();
                 numberWord.numberWord(num);
                 break;
-
+            case 20:
+                Twenty recCalculation = new Twenty();
+                BufferedReader read = new BufferedReader(new InputStreamReader(System.in));
+                System.out.print("Введите число n: ");
+                try {
+                    String number = read.readLine();
+                    int nNew = Integer.parseInt(number);
+                    long result = recCalculation.recCalculation(nNew);
+                    System.out.print("Факториал числа " + nNew + " = " + result);
+                }catch (IOException e) {
+                    System.out.println("Ошибка ввода");
+                }
+                catch (NumberFormatException e){
+                    System.out.println("Введите корректное число ");
+                }
+                break;
         }
     }
 }
