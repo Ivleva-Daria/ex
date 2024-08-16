@@ -108,6 +108,9 @@ public class Tasks {
                     System.out.println("Введите корректное число ");
                 }
                 break;
+            case 21:
+                Twenty_one twentyOne = new Twenty_one();
+                twentyOne.methodTwentyOne();
         }
     }
 }
