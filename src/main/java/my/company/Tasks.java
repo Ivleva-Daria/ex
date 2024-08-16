@@ -111,6 +111,11 @@ public class Tasks {
             case 21:
                 Twenty_one twentyOne = new Twenty_one();
                 twentyOne.methodTwentyOne();
+                break;
+            case 22:
+                Twenty_two twentyTwo = new Twenty_two();
+                twentyTwo.methodTwentyTwo();
+                break;
         }
     }
 }
