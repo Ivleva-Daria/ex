@@ -18,18 +18,18 @@ public class Main {
     }
     //Методы чтения
     private static int  methodRead() {
-        int ch1 = readScanner();
-        //int ch2 = readBuffer();
-        return ch1;
+        //int ch1 = readScanner();
+        int ch2 = readBuffer();
+        return ch2;
     }
     //Метод чтения Scanner
-    private static int readScanner(){
+    /*private static int readScanner(){
         Scanner choice = new Scanner(System.in);
         int ch1 = choice.nextInt();
         return ch1;
-    }
+    }*/
     //Метод чтения BufferedReader
-    /*private static int readBuffer(){
+    private static int readBuffer(){
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
             String ch2 = reader.readLine();
@@ -38,7 +38,7 @@ public class Main {
             System.out.println("Ошибка ввода");
             return -1;
         }
-    }*/
+    }
 
 }
 

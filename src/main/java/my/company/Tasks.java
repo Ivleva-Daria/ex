@@ -116,6 +116,26 @@ public class Tasks {
                 Twenty_two twentyTwo = new Twenty_two();
                 twentyTwo.methodTwentyTwo();
                 break;
+            case 23:
+                Twenty_three twentyThree = new Twenty_three();
+                BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+                System.out.println("Введите число: ");
+                try{
+                    String number = br.readLine();
+                    if(Twenty_three.methodTwentyThree(number)) {
+                        System.out.println(number + " является палиндромом");
+                    }else {
+                        System.out.println(number + " не является палиндромом");
+                    }
+                }
+                catch (IOException e){
+                    System.out.println(" ");
+                }
+                break;
+
+
+
+
         }
     }
 }
