@@ -4,6 +4,8 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
 
+import static my.company.Twenty_three.*;
+
 public class Tasks {
     void methodTask(int chNew) {
         switch(chNew) {
@@ -122,11 +124,25 @@ public class Tasks {
                 System.out.println("Введите число: ");
                 try{
                     String number = br.readLine();
-                    if(Twenty_three.methodTwentyThree(number)) {
+                    if(methodTwentyThree(number)) {
                         System.out.println(number + " является палиндромом");
                     }else {
                         System.out.println(number + " не является палиндромом");
                     }
+                }
+                catch (IOException e){
+                    System.out.println(" ");
+                }
+                break;
+            case 24:
+                Twenty_four twentyFour = new Twenty_four();
+                BufferedReader reader2 = new BufferedReader(new InputStreamReader(System.in));
+                System.out.println("Введите число: ");
+                try{
+                    String number2 = reader2.readLine();
+                    int newNumber = Integer.parseInt(number2);
+                    long result2 = twentyFour.methodTwentyFour(newNumber);
+                    System.out.print("F" + "(" + newNumber + ")" + " = " + result2);
                 }
                 catch (IOException e){
                     System.out.println(" ");
