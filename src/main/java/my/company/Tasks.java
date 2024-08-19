@@ -148,10 +148,9 @@ public class Tasks {
                     System.out.println(" ");
                 }
                 break;
-
-
-
-
+            case 25:
+                Twenty_five twentyFive = new Twenty_five();
+                twentyFive.methodTwentyFive();
         }
     }
 }
